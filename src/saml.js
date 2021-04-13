@@ -964,7 +964,7 @@ class SAML {
     profile.getAssertion = () => parsedAssertion;
     profile.getSamlResponseXml = () => samlResponseXml;
 
-    return {profile, success: false};
+    return {profile, success: true};
   }
 
   _checkTimestampsValidityError(nowMs, notBefore, notOnOrAfter) {
